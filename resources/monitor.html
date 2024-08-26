@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - Brand</title>
+
+
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+
+
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><img src="BEL_LOGO.png" style="width: 32px;height: 32px;">
+                    <div class="sidebar-brand-icon rotate-n-15"></div>
+                    <div class="sidebar-brand-text mx-3"><span style="width: 20px;height: 20px;">SNMP</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href=" "></a><a class=" " href=" "></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="monitor.html"><i class="fas fa-user"></i><span>Monitor</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="control.html"><i class="fas fa-table"></i><span>Control</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i><span>About</span></a></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <fieldset style="margin-left: 393px;">
+                            <legend>BUC MANAGEMENT &amp; CONTROL</legend>
+                        </fieldset>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow border-start-primary py-2" style="width: 262px;">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-dark fw-bold h5 mb-0"><span><span id="online_offline_label" style="color: rgb(78, 115, 223);">BUC OFFLINE</span></span></div>
+                                        </div>
+                                        <div class="col-auto"><button id="online_offline" class="btn btn-primary" type="button" style="border-top-left-radius: 23.6px;border-top-right-radius: 23.6px;border-bottom-right-radius: 23.6px;border-bottom-left-radius: 23.6px;width: 30px;height: 31px;"></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row"></div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="height: 82px;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col"><label class="col-form-label" style="font-size: 20px;width: 158.9px;"><span style="color: rgb(246, 194, 62);">LAST UPDATED :</span></label></div>
+                                        <div class="col">
+                                            <div id="current-time" class="col-form-label" style="margin-top: 10px; display: inline-block;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col">
+                            <div class="card" style="height: 413px;">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th style="font-size: 18px;"><br><span style="color: rgb(28, 200, 138);">PARAMETERS</span></th>
+                                                    <th><br><span style="color: rgb(28, 200, 138);">HEALTH INDICATION</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><br><strong>Fan Health</strong></td>
+                                                    <td><button id="bt1" class="btn btn-primary" type="button" style="border-top-left-radius: 23.6px;border-top-right-radius: 23.6px;border-bottom-right-radius: 23.6px;border-bottom-left-radius: 23.6px;width: 30px;height: 31px;margin-top: 14px;margin-left: 57px;"></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>Input Power</strong></td>
+                                                    <td><button id="bt2" class="btn btn-primary" type="button" style="border-top-left-radius: 23.6px;border-top-right-radius: 23.6px;border-bottom-right-radius: 23.6px;border-bottom-left-radius: 23.6px;width: 30px;height: 31px;margin-top: 14px;margin-left: 57px;"></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>LO Power Level</strong></td>
+                                                    <td><button id="bt3" class="btn btn-primary" type="button" style="border-top-left-radius: 23.6px;border-top-right-radius: 23.6px;border-bottom-right-radius: 23.6px;border-bottom-left-radius: 23.6px;width: 30px;height: 31px;margin-top: 14px;margin-left: 57px;"></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>PLO Lock Status</strong></td>
+                                                    <td><button id="bt4" class="btn btn-primary" type="button" style="border-top-left-radius: 23.6px;border-top-right-radius: 23.6px;border-bottom-right-radius: 23.6px;border-bottom-left-radius: 23.6px;width: 30px;height: 31px;margin-top: 14px;margin-left: 57px;"></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>L-Band Input OverDrive</strong></td>
+                                                    <td><button id="bt5" class="btn btn-primary" type="button" style="border-top-left-radius: 23.6px;border-top-right-radius: 23.6px;border-bottom-right-radius: 23.6px;border-bottom-left-radius: 23.6px;width: 30px;height: 31px;margin-top: 14px;margin-left: 57px;"></button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="height: 413px;">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th style="font-size: 18px;"><br><span style="color: rgb(28, 200, 138);">PARAMETERS</span></th>
+                                                    <th><br><span style="color: rgb(28, 200, 138);">HEALTH INDICATION</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><br><strong>VSWR</strong></td>
+                                                    <td><button id="bt6" class="btn btn-primary" type="button" style="border-top-left-radius: 23.6px;border-top-right-radius: 23.6px;border-bottom-right-radius: 23.6px;border-bottom-left-radius: 23.6px;width: 30px;height: 31px;margin-top: 14px;margin-left: 57px;"></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>DC Health 24V</strong></td>
+                                                    <td><button id="bt7" class="btn btn-primary" type="button" style="border-top-left-radius: 23.6px;border-top-right-radius: 23.6px;border-bottom-right-radius: 23.6px;border-bottom-left-radius: 23.6px;width: 30px;height: 31px;margin-top: 14px;margin-left: 57px;"></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>Sequence Health</strong></td>
+                                                    <td><button id="bt8" class="btn btn-primary" type="button" style="border-top-left-radius: 23.6px;border-top-right-radius: 23.6px;border-bottom-right-radius: 23.6px;border-bottom-left-radius: 23.6px;width: 30px;height: 31px;margin-top: 14px;margin-left: 57px;"></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>RF Forward Power Alarm</strong></td>
+                                                    <td><button id="bt9" class="btn btn-primary" type="button" style="border-top-left-radius: 23.6px;border-top-right-radius: 23.6px;border-bottom-right-radius: 23.6px;border-bottom-left-radius: 23.6px;width: 30px;height: 31px;margin-top: 14px;margin-left: 57px;"></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>Temperature Health HPD</strong></td>
+                                                    <td><button id="bt10" class="btn btn-primary" type="button" style="border-top-left-radius: 23.6px;border-top-right-radius: 23.6px;border-bottom-right-radius: 23.6px;border-bottom-left-radius: 23.6px;width: 30px;height: 31px;margin-top: 14px;margin-left: 57px;"></button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                <!-- test start -->
+
+                <div class="row" style="margin-top: 10px;">
+                    <div id="warning" style="display: none; color: red;">There seems to be an issue connecting to the buc. Please wait a moment.</div>
+                </div>
+                 <!-- test end -->
+               
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Bharat Electronics Limited. All Rights Reserverd.</span></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script defer src="bootstrap.min.js"></script>
+    <script defer src="theme.js"></script>
+    <script defer src="monitor_script.js"></script>
+
+</body>
+
+</html>

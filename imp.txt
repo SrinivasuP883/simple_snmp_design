@@ -1,0 +1,29 @@
+
+
+
+===========================================================================================
+Compile in Windows
+===========================================================================================
+PS W:\worker\aug26\Test1> 
+javac --module-path W:\worker\aug26\Test1\lib\javafx-sdk-22.0.2\lib --add-modules javafx.controls,javafx.fxml,javafx.web -cp W:\worker\aug26\Test1\lib\snmp4j-5.3.0.jar -d out W:\worker\aug26\Test1\src\*.java
+===========================================================================================
+
+===========================================================================================
+Run in Windows
+===========================================================================================
+PS W:\worker\aug26\Test1> 
+java --module-path W:\worker\aug26\Test1\lib\javafx-sdk-22.0.2\lib --add-modules javafx.controls,javafx.fxml,javafx.web -cp "out;lib\snmp4j-5.3.0.jar" MyApp
+===========================================================================================
+
+
+===========================================================================================
+Compile in Ubuntu
+===========================================================================================
+javac --module-path /home/stom/Documents/z_worker/java/Snmp/lib/javafx-sdk-22.0.2/lib --add-modules javafx.controls,javafx.fxml,javafx.web -cp /home/stom/Documents/z_worker/java/Snmp/lib/org.snmp4j-5.3.0.jar -d out /home/stom/Documents/z_worker/java/Snmp/src/*.java
+===========================================================================================
+
+===========================================================================================
+Run in Ubuntu
+===========================================================================================
+java --module-path /home/stom/Documents/z_worker/java/Snmp/lib/javafx-sdk-22.0.2/lib --add-modules javafx.controls,javafx.fxml,javafx.web -cp "out:lib/org.snmp4j-5.3.0.jar" MyApp
+===========================================================================================

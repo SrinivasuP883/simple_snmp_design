@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - Brand</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><img src="/assets/img/BEL_LOGO.png" style="width: 32px;height: 32px;">
+                    <div class="sidebar-brand-icon rotate-n-15"></div>
+                    <div class="sidebar-brand-text mx-3"><span style="width: 20px;height: 20px;">SNMP</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href=" "></a><a class=" " href=" "></a></li>
+                    <li class="nav-item"><a class="nav-link" href="monitor.html"><i class="fas fa-user"></i><span>Monitor</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="control.html"><i class="fas fa-table"></i><span>Control</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i><span>About</span></a></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <fieldset style="margin-left: 393px;">
+                            <legend>BUC MANAGEMENT &amp; CONTROL</legend>
+                        </fieldset>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col">
+                            <div class="card shadow mb-3" style="height: 336px;">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 fw-bold" style="font-size: 18px;">Network Settings</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr></tr>
+                                                <tr>
+                                                    <td><br><strong>IP Address</strong></td>
+                                                    <td><input type="number"></td>
+                                                    <td><button class="btn btn-primary" type="button" style="width: 67px;border-top-left-radius: 17.6px;border-top-right-radius: 17.6px;border-bottom-right-radius: 17.6px;border-bottom-left-radius: 17.6px;">Set</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>Subnet Mask</strong></td>
+                                                    <td><input type="number"></td>
+                                                    <td><button class="btn btn-primary" type="button" style="width: 67px;border-top-left-radius: 17.6px;border-top-right-radius: 17.6px;border-bottom-right-radius: 17.6px;border-bottom-left-radius: 17.6px;">Set</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>Gateway</strong></td>
+                                                    <td><input type="number"></td>
+                                                    <td><button class="btn btn-primary" type="button" style="width: 67px;border-top-left-radius: 17.6px;border-top-right-radius: 17.6px;border-bottom-right-radius: 17.6px;border-bottom-left-radius: 17.6px;">Set</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>Trap IP</strong></td>
+                                                    <td><input type="number"></td>
+                                                    <td><button class="btn btn-primary" type="button" style="width: 67px;border-top-left-radius: 17.6px;border-top-right-radius: 17.6px;border-bottom-right-radius: 17.6px;border-bottom-left-radius: 17.6px;">Set</button></td>
+                                                </tr>
+                                                <tr></tr>
+                                                <tr></tr>
+                                                <tr></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow mb-3" style="height: 336px;">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 fw-bold" style="font-size: 18px;">RF Parameters</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr></tr>
+                                                <tr>
+                                                    <td><br><strong>RF Mute</strong></td>
+                                                    <td>
+                                                        <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">Dropdown </button>
+                                                            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><button class="btn btn-primary" type="button" style="width: 67px;border-top-left-radius: 17.6px;border-top-right-radius: 17.6px;border-bottom-right-radius: 17.6px;border-bottom-left-radius: 17.6px;">Set</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>Extref10MHz</strong></td>
+                                                    <td>
+                                                        <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">Dropdown </button>
+                                                            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><button class="btn btn-primary" type="button" style="width: 67px;border-top-left-radius: 17.6px;border-top-right-radius: 17.6px;border-bottom-right-radius: 17.6px;border-bottom-left-radius: 17.6px;">Set</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>Digital Attn</strong></td>
+                                                    <td>
+                                                        <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">Dropdown </button>
+                                                            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><button class="btn btn-primary" type="button" style="width: 67px;border-top-left-radius: 17.6px;border-top-right-radius: 17.6px;border-bottom-right-radius: 17.6px;border-bottom-left-radius: 17.6px;">Set</button></td>
+                                                </tr>
+                                                <tr></tr>
+                                                <tr></tr>
+                                                <tr></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 0px;">
+                        <div class="col">
+                            <div class="card shadow mb-3" style="height: 206px;">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 fw-bold" style="font-size: 18px;">System Settings</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr></tr>
+                                                <tr>
+                                                    <td><br><strong>Buc Self Master</strong></td>
+                                                    <td><input type="number"></td>
+                                                    <td><button class="btn btn-primary" type="button" style="width: 67px;border-top-left-radius: 17.6px;border-top-right-radius: 17.6px;border-bottom-right-radius: 17.6px;border-bottom-left-radius: 17.6px;">Set</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><br><strong>Buc Restart</strong></td>
+                                                    <td><input type="number"></td>
+                                                    <td><button class="btn btn-primary" type="button" style="width: 67px;border-top-left-radius: 17.6px;border-top-right-radius: 17.6px;border-bottom-right-radius: 17.6px;border-bottom-left-radius: 17.6px;">Set</button></td>
+                                                </tr>
+                                                <tr></tr>
+                                                <tr></tr>
+                                                <tr></tr>
+                                                <tr></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Bharat Electronics Limited. All Rights Reserverd.</span></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="bootstrap.min.js"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>
